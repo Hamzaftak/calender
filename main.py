@@ -13,14 +13,14 @@ st.set_page_config(
 if "patients" not in st.session_state:
     st.session_state.patients = {
         1: {
-            "nom": "Dupont",
-            "prenom": "Marie",
+            "nom": "MALADE",
+            "prenom": "Patient",
             "date_naissance": "1990-05-12",
             "anamnese": "",
         },
         2: {
-            "nom": "Martin",
-            "prenom": "Paul",
+            "nom": "PAS MALADE",
+            "prenom": "Patient",
             "date_naissance": "1985-09-20",
             "anamnese": "",
         },
