@@ -31,7 +31,7 @@ if "appointments" not in st.session_state:
         {
             "id": 1,
             "patient_id": 1,
-            "psy": "Dr. Bernard",
+            "psy": "Natacha",
             "date": "2026-10-16",
             "heure": "10:00",
             "duree": 45,
@@ -41,7 +41,7 @@ if "appointments" not in st.session_state:
         {
             "id": 2,
             "patient_id": 2,
-            "psy": "Dr. Bernard",
+            "psy": "Natacha",
             "date": "2026-10-16",
             "heure": "11:00",
             "duree": 60,
@@ -84,7 +84,7 @@ if page == "Calendrier":
         "Psychologue",
         ["Tous"] + sorted(
             set(a["psy"] for a in appointments)
-            | {"Dr. Bernard", "Dr. Dupont"}
+            | {"Natacha", "Coralie"}
         ),
     )
 
@@ -291,7 +291,7 @@ elif page == "Nouveau rendez-vous":
 
         psy = st.selectbox(
             "Psychologue",
-            ["Dr. Bernard", "Dr. Dupont"],
+            ["Natacha", "Coralie"],
         )
 
         date = st.date_input("Date")
